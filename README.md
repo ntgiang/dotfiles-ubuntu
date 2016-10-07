@@ -1,12 +1,12 @@
-# dotfiles-ubuntu
-Setup script and dotfiles for a new Ubuntu installation
+# Scripts and dotfiles for Ubuntu
+
+Setup script and dotfiles for a new Ubuntu installation. This was created for Ubuntu 16.04 and I will continue to update them as needed.
 
 ## What it does
 
 The scripts will setup a complete desktop with the most used (for me) applications and configure the system.
 
 Manual interactions are listed in the "Tweaks" section below.
-
 
 ## Tweaks
 
