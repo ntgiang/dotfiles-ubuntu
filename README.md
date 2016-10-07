@@ -1,6 +1,13 @@
 # dotfiles-ubuntu
 Setup script and dotfiles for a new Ubuntu installation
 
+## What it does
+
+The scripts will setup a complete desktop with the most used (for me) applications and configure the system.
+
+Manual interactions are listed in the "Tweaks" section below.
+
+
 ## Tweaks
 
 * Instead of terminal execute tmux
@@ -11,5 +18,3 @@ Setup script and dotfiles for a new Ubuntu installation
   * Go to Settings. Select Keyboard and then shortcusts. Under custom shortcuts add a new entry with:
   * Name: Shutter Selection, Command: shutter -s
   * Then assign shortcut: shift+alt+5
- 
- 
