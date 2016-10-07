@@ -1,0 +1,5 @@
+scriptDir=${PWD}
+
+echo $scriptDir
+
+
