@@ -10,6 +10,6 @@ Setup script and dotfiles for a new Ubuntu installation
 * Create shortcut for Shutter
   * Go to Settings. Select Keyboard and then shortcusts. Under custom shortcuts add a new entry with:
   * Name: Shutter Selection, Command: shutter -s
-  * Then assign shortchut: shift+alt+5
+  * Then assign shortcut: shift+alt+5
  
  
