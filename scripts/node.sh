@@ -4,6 +4,8 @@
 # Install nvm and node and global packages
 #
 
+echo 'Installing nvm and node'
+
 # NVM
 cd "$HOME/Downloads"
 sudo -s wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash

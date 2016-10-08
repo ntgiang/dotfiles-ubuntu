@@ -4,8 +4,9 @@
 # Installs everything Atom related
 #
 
+echo 'Installing Atom and packages'
+
 # Install Atom
-echo 'Installing Atom'
 cd "$HOME/Downloads"
 wget "https://github.com/atom/atom/releases/download/v1.10.2/atom-amd64.deb"
 dpkg -i atom-amd64.deb

@@ -4,6 +4,8 @@
 # Fetches remote apps and installs them
 #
 
+echo 'Downloading and installing apps'
+
 # Installing ZSH
 echo 'Installing ZSH Shell...'
 cd "$HOME/Downloads"
@@ -46,3 +48,6 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
 mv PowerlineSymbols.otf /usr/share/fonts/
 fc-cache -vf
 mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+
+# Slack
+# Todo

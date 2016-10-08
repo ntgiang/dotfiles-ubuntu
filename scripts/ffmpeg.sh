@@ -3,3 +3,5 @@
 #
 # Install ffmpeg
 #
+
+echo 'Installing ffmpeg'

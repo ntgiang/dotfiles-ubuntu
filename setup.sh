@@ -11,37 +11,23 @@
 # Where are we?
 scriptDir=${PWD}
 
-# Repository stuff
+# General packages
 ./scripts/packages.sh
 
+# Development packages
+./scripts/packages-dev.sh
+
 # Downloading apps
-echo 'Downloading and installing app...'
 ./scripts/remote.sh
 
 # Atom
-echo 'Installing Atom and packages'
 ./scripts/atom.sh
 
 # FFmpeg
-echo 'Installing ffmpeg'
 ./scripts/ffmpeg.sh
 
 # NVM and node
-echo 'Installing node'
 ./scripts/node.sh
-
-# Disable autostart of MySQL
-service mysql stop
-update-rc.d mysql disable
-
-# Disable autostart of MongoDB
-service mongodb stop
-update-rc.d mongodb disable
-
-# Disable autostart of ElasticSearch
-service elasticsearch stop
-update-rc.d elasticsearch disable
-systemctl disable elasticsearch.service
 
 ## Configure stuff
 echo 'Configuring things...'
