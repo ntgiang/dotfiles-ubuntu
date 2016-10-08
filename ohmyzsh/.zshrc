@@ -206,8 +206,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg-6'
 ##
 #autosuggest_start
 
-export HOMEBREW_GITHUB_API_TOKEN="c338ee6aa0615f1f77b1cb62d41c5bae2732a5a7"
-
 # No loading of NVM anymore for every shell. Use thse instead
 #nvm() {
 #    unset -f nvm

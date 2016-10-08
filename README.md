@@ -8,7 +8,11 @@ The scripts will setup a complete desktop with the most used (for me) applicatio
 
 ## How to use it
 
-Simply clone this repository and configure at least the gitconfig file with your name and email address.
+Simply clone this repository and configure at least the gitconfig file with your name and email address. The execute the setup with:
+
+```
+sudo ./setup.sh
+```
 
 If you like, configure what is being installed or fork this repository and make a pull request.
 
@@ -53,6 +57,22 @@ This will download Atom and install useful packages. Read the script to see what
 Note: Not yet done!!!
 
 Will download all required packages, compile them and install everything for ffmpeg to be roaring on your system. This can also be used to re-install ffmpeg if a new version comes out.
+
+### Vim configuration
+
+I'm using vim-plug to install a ton of plugins (too many to list). Check out the .vimrc file to see and manipulate it. In addition it also configures vim with shortcuts and more.
+
+### Zsh configuration
+
+I love my zsh shell. I use bullet train plugins and more to make it look cool :) Read the .zshrc file to see how it is configured. To manage all plugins I use zgen.
+
+#### Aliases
+
+Note: Not yet configured for Ubuntu!
+
+I couldn't live without my aliases in the shell. For easy management they all live in the .aliases file. I start mongodb, elasticsearch, elasticsearch and more with aliases.
+
+Configure and tune for your need. Exclude them from any pull request please.
 
 ### Note
 
