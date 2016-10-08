@@ -22,7 +22,7 @@ Pull requests are welcomed!
 
 ### General packages (./scripts/packages.sh)
 
-Shutter, VLC, Corebird, Transmission, Tmux, Clipit, Virtualbox, s3cmd, smartmontools, ctags and some other packages needed for Ubuntu working.
+Shutter, VLC, Corebird, Transmission, Tmux, Clipit, Virtualbox, s3cmd, smartmontools, ctags, tlp and some other packages needed for Ubuntu working.
 
 In addition, it will change the default shell to zsh and download ohmyzsh! It's really awesome and you should use it anyhow :)
 
@@ -30,7 +30,7 @@ In addition, it will change the default shell to zsh and download ohmyzsh! It's 
 
 This downloads and installs packages from websites. Following applications are being installed:
 
-OhMyZsh, Simplenote, MongoChef, Smartgit, Exiftool, Powerline
+OhMyZsh, Simplenote, MongoChef, Robomongo, Smartgit, Exiftool, Powerline
 
 Files are being downloaded to our "download" folder.
 
@@ -84,6 +84,6 @@ In general all scripts are independent of each other and can be executed individ
 * Upon selecting a text (terminal, etc.) have it automatically copied into the clipboard using clipit:
   * Right click / Preferences / Settings : check: Use Primary selections and Synchronize clipboards
 * Create shortcut for Shutter
-  * Go to Settings. Select Keyboard and then shortcusts. Under custom shortcuts add a new entry with:
+  * Go to Settings. Select Keyboard and then shortcuts. Under custom shortcuts add a new entry with:
   * Name: Shutter Selection, Command: shutter -s
   * Then assign shortcut: shift+alt+5

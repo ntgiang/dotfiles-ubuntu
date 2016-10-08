@@ -11,6 +11,9 @@
 # Enable Universe repro
 add-apt-repository -y universe
 
+# Enable TLP
+add-apt-repository -y ppa:linrunner/tlp
+
 # Update and upgrade
 apt-get update
 apt-get -y upgrade
@@ -42,9 +45,6 @@ apt -y install corebird
 # S3cmd
 apt -y install s3cmd
 
-# Smartmontools
-apt -y install smartmontools
-
 # Ctags
 apt -y install exuberant-ctags
 
@@ -57,3 +57,9 @@ apt -y install preload
 
 # Get compiz setting manager
 apt -y install compizconfig-settings-manager
+
+# Install TLP
+apt -y install tlp tlp-rdw
+apt -y install smartmontools ethtool
+apt -y install tp-smapi-dkms
+tlp start

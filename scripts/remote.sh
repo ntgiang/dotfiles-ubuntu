@@ -22,7 +22,12 @@ echo 'Installing Mongochef'
 cd "$HOME/Downloads"
 wget "https://cdn.3t.io/mongochef-core/linux/4.3.0/mongochef-linux-x64-dist.tar.gz"
 tar -xvzf mongochef-linux-x64-dist.tar.gz
- Create shortcut for mongochef
+
+# Install Robomongo
+echo 'Installing Robomongo'
+cd "$HOME/Downloads"
+wget "https://download.robomongo.org/0.9.0-rc10/linux/robomongo-0.9.0-rc10-linux-x86_64-33c89ea.tar.gz"
+tar -xvzf robomongo-0.9.0-rc10-linux-x86_64-33c89ea.tar.gz
 
 # Install Smartgit
 echo 'Installing Smartgit'

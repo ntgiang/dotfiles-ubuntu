@@ -1,14 +1,14 @@
 # Development
-alias   hmu="cd /Users/nitai/Documents/repos/helpmonks && node-dev app.js"
-alias   hmuw="cd /Users/nitai/Documents/repos/helpmonks-website && node-dev app.js"
-alias   ru="cd /Users/nitai/Documents/repos/razuna-next && node-dev app.js"
-alias   yu="cd /Users/nitai/Documents/repos/yoda && node-dev app.js"
-alias	hmp="cd /Users/nitai/Documents/repos/helpmonks && node _run_tests.js -p"
+alias   hmu="cd $HOME/Documents/repos/helpmonks && node-dev app.js"
+alias   hmuw="cd $HOME/Documents/repos/helpmonks-website && node-dev app.js"
+alias   ru="cd $HOME/Documents/repos/razuna-next && node-dev app.js"
+alias   yu="cd $HOME/Documents/repos/yoda && node-dev app.js"
+alias	hmp="cd $HOME/Documents/repos/helpmonks && node _run_tests.js -p"
 
 # Razuna Legacy
-alias	rau="/Users/nitai/Documents/tomcat/bin/startup.sh"
-alias	rad="/Users/nitai/Documents/tomcat/bin/shutdown.sh"
-alias	tailraz="tail -f /Users/nitai/Documents/tomcat/logs/catalina.out"
+alias	rau="$HOME/Documents/tomcat/bin/startup.sh"
+alias	rad="$HOME/Documents/tomcat/bin/shutdown.sh"
+alias	tailraz="tail -f $HOME/Documents/tomcat/logs/catalina.out"
 
 alias	nod="killall node"
 
@@ -36,22 +36,17 @@ alias	noj="killall java"
 alias	myu="mysql.server start"
 alias	myd="mysql.server stop"
 
-# Flush DNS
-alias	flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;"
-
 # Selenium
-alias   sel="selenium-server -p 4444 -Dwebdriver.chrome.driver=/Users/nitai/.nvm/versions/node/v4.2.2/bin/wdio &"
+alias   sel="selenium-server -p 4444 -Dwebdriver.chrome.driver=$HOME/.nvm/versions/node/v4.2.2/bin/wdio &"
 
 # Edit this file
 alias	ez="vim ~/.zshrc"
 
+# Edit aliases
+alias   eza="vim ~/.zshrc.d/.aliases"
+
 # Source zshrc
 alias   sez="source ~/.zshrc"
-
-# Shortcut to nvim because I'm lazy
-#alias   vi="nvim"
-#alias	vim="nvim"
-#alias	v="nvim"
 
 #Prevent tragedy
 alias   rm="rm -i"
@@ -59,4 +54,4 @@ alias   rm="rm -i"
 # NPM
 alias   npmo="npm outdated"
 alias   npmu="npm update"
-
+alias   npmi="npm install"
