@@ -1,7 +1,7 @@
 # Development
 alias   hmu="cd $HOME/Documents/repos/helpmonks && node-dev app.js"
 alias   hmuw="cd $HOME/Documents/repos/helpmonks-website && node-dev app.js"
-alias   ru="cd $HOME/Documents/repos/razuna-next && node-dev app.js"
+alias   ru="cd $HOME/Documents/repos/razuna-next && npm run dev"
 alias   yu="cd $HOME/Documents/repos/yoda && node-dev app.js"
 alias	hmp="cd $HOME/Documents/repos/helpmonks && node _run_tests.js -p"
 
@@ -28,13 +28,15 @@ alias	monklb1="ssh root@162.243.48.170"
 alias	epo="ssh epo@185.49.16.67"
 
 # Useful stuff
-alias	mou="mongod --dbpath ~/mongodb/db &"
-alias	mod="killall mongod"
+alias	mou="sudo systemctl start mongodb"
+alias	mod="sudo systemctl stop mongodb"
+alias	mos="sudo systemctl restart mongodb"
 #alias	elu="elasticsearch --config=/usr/local/opt/elasticsearch17/config/elasticsearch.yml &"
 alias	elu="elasticsearch &"
 alias	noj="killall java"
-alias	myu="mysql.server start"
-alias	myd="mysql.server stop"
+alias	myu="sudo service mysql start"
+alias	myd="sudo service mysql stop"
+alias	mys="sudo service mysql restart"
 
 # Selenium
 alias   sel="selenium-server -p 4444 -Dwebdriver.chrome.driver=$HOME/.nvm/versions/node/v4.2.2/bin/wdio &"
@@ -51,7 +53,24 @@ alias   sez="source ~/.zshrc"
 #Prevent tragedy
 alias   rm="rm -i"
 
+# Zsh previously had ll. Somehow this changed to work with less.
+# This changed it back again
+alias   ll="la"
+
 # NPM
 alias   npmo="npm outdated"
 alias   npmu="npm update"
 alias   npmi="npm install"
+
+# ExpressVPM
+alias   vpnc="expressvpn connect"
+alias   vpns="expressvpn status"
+alias   vpnd="expressvpn disconnect"
+alias   vpnl="expressvpn list"
+alias   vpncs="expressvpn connect smart"
+
+# Apt
+alias   apu="sudo apt update"
+alias   apg="sudo apt upgrade"
+alias   agr="sudo apt autoremove"
+alias   agc="sudo apt autoclean"

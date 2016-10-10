@@ -63,3 +63,12 @@ apt -y install tlp tlp-rdw
 apt -y install smartmontools ethtool
 apt -y install tp-smapi-dkms
 tlp start
+
+# Let's be able to mount exfat
+apt -y install exfat-fuse exfat-utils
+
+# 7zip
+apt -y install p7zip-full
+
+# Terminator
+apt -y install terminator

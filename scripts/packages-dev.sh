@@ -16,8 +16,8 @@ apt-add-repository -y ppa:webupd8team/java
 add-apt-repository -y ppa:zeal-developers/ppa
 
 # Add MongoDB
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.3 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 
 # Add Elasticsearch
 wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -53,7 +53,12 @@ apt -y install gpac
 apt -y install mysql-server mysql-client
 
 # MongoDB
-apt -y install mongodb
+# (courtesy of https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04)
+apt -y install mongodb-org
+# Copy systemd file
+cp ../mongodb-systemd /etc/systemd/system/mongodb.service
+# Unmask service (just in case)
+systemctl unmask mongodb
 
 # ElasticSearch
 apt -y install elasticsearch
