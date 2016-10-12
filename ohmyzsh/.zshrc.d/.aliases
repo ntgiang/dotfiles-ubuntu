@@ -70,7 +70,9 @@ alias   vpnl="expressvpn list"
 alias   vpncs="expressvpn connect smart"
 
 # Apt
-alias   apu="sudo apt update"
-alias   apg="sudo apt upgrade"
+alias   agu="sudo apt update"
+alias   agg="sudo apt upgrade"
 alias   agr="sudo apt autoremove"
 alias   agc="sudo apt autoclean"
+alias   agi="sudo apt install"
+
