@@ -72,3 +72,6 @@ apt -y install p7zip-full
 
 # Terminator
 apt -y install terminator
+
+# Printer drivers
+apt -y openprinting-gutenprint
