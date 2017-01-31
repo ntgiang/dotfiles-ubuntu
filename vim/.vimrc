@@ -22,44 +22,44 @@ Plug 'jwhitley/vim-plug'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-" Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 Plug 'simnalamburt/vim-mundo'
-" Plug 'qpkorr/vim-bufkill'
-" Plug 'tpope/vim-vinegar'
-" Plug 'krisajenkins/vim-pipe'
+Plug 'qpkorr/vim-bufkill'
+Plug 'tpope/vim-vinegar'
+Plug 'krisajenkins/vim-pipe'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 
 " auto complete
 Plug 'Valloric/YouCompleteMe', {'do': 'python2 install.py'}
-" Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 Plug 'scrooloose/syntastic'
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " editor
 Plug 'scrooloose/nerdcommenter'
 Plug 'hlissner/vim-multiedit'
 Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-repeat'
-" Plug 'junegunn/vim-easy-align'
-" Plug 'kana/vim-textobj-user'
-" Plug 'kana/vim-textobj-indent'
-" Plug 'vim-scripts/Smart-Tabs'
-" Plug 'ntpeters/vim-better-whitespace'
-" Plug 'Yggdroot/indentLine'
-" Plug 'djoshea/vim-autoread'
-" Plug 'tmhedberg/matchit'
-" Plug 'osyo-manga/vim-over'
-" Plug 'hlissner/vim-multiedit'
+Plug 'tpope/vim-repeat'
+Plug 'junegunn/vim-easy-align'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'vim-scripts/Smart-Tabs'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'Yggdroot/indentLine'
+Plug 'djoshea/vim-autoread'
+Plug 'tmhedberg/matchit'
+Plug 'osyo-manga/vim-over'
+Plug 'hlissner/vim-multiedit'
 Plug 'sjl/gundo.vim'
 
 " csv
-" Plug 'chrisbra/csv.vim'
+Plug 'chrisbra/csv.vim'
 
 " hex
-"" Plug 'fidian/hexmode'
+Plug 'fidian/hexmode'
 
 " nodejs
 Plug 'moll/vim-node'
@@ -86,14 +86,14 @@ Plug 'gabrielelana/vim-markdown'
 
 " git
 Plug 'tpope/vim-fugitive'
-" Plug 'gregsexton/gitv'
+Plug 'gregsexton/gitv'
 Plug 'renyard/vim-git-flow-format'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'airblade/vim-gitgutter'
-" Plug 'jreybert/vimagit', { 'branch': 'next' }
+Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit', { 'branch': 'next' }
 
 " rest tool
-" Plug 'diepm/vim-rest-console'
+Plug 'diepm/vim-rest-console'
 
 " search
 Plug 'haya14busa/incsearch.vim'
@@ -101,8 +101,8 @@ Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'dyng/ctrlsf.vim'
-" Plug 'rking/ag.vim'
-" Plug 'gabesoft/vim-ags'
+Plug 'rking/ag.vim'
+Plug 'gabesoft/vim-ags'
 
 " theme
 Plug 'altercation/vim-colors-solarized'
@@ -358,12 +358,15 @@ autocmd BufEnter * lcd %:p:h
 map <F8> :TagbarToggle<CR>
 
 " airline
+let g:airline_extensions = []
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#format = 'Git_flow_branch_format'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:bufferline_echo = 0
 
 " ctrlp
 set wildmode=list:longest,list:full
@@ -500,3 +503,4 @@ set nocursorline        " Don't paint cursor line
 set nocursorcolumn      " Don't paint cursor column
 set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 let html_no_rendering=1 " Don't render italic, bold, links in HTML
+

@@ -81,9 +81,14 @@ In general all scripts are independent of each other and can be executed individ
 ## Tweaks
 
 * Instead of terminal execute tmux
+* Terminator settings allow to copy text opon selection
 * Upon selecting a text (terminal, etc.) have it automatically copied into the clipboard using clipit:
   * Right click / Preferences / Settings : check: Use Primary selections and Synchronize clipboards
+  * Though, this works, it means that every selected text gets automatically copied to the clipboard. It's bothersome during coding.
 * Create shortcut for Shutter
   * Go to Settings. Select Keyboard and then shortcuts. Under custom shortcuts add a new entry with:
   * Name: Shutter Selection, Command: shutter -s
   * Then assign shortcut: shift+alt+5
+* Ubuntu has a habit to always start bluetooth. Disable with:
+  * sudo vim /etc/rc.local
+  * Add line: rfkill block bluetooth

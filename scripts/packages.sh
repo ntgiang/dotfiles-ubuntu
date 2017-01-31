@@ -4,6 +4,11 @@
 # Install all packages from repository
 #
 
+add-apt-repository -y ppa:webupd8team/terminix
+add-apt-repository -y ppa:snwh/pulp
+add-apt-repository -y ppa:tista/adapta
+add-apt-repository -y ppa:atareao/atareao
+
 #
 # Repository stuff
 #
@@ -74,4 +79,32 @@ apt -y install p7zip-full
 apt -y install terminator
 
 # Printer drivers
-apt -y openprinting-gutenprint
+apt -y install openprinting-gutenprint
+
+# NTP
+apt -y install ntp
+service ntp restart
+
+# Font Awesome
+apt -y install fonts-font-awesome
+
+# DNS masq
+#apt -y install dnsmasq
+#systemctl restart dnsmasq
+
+# Terminix
+apt -y install terminix
+
+# Gnome stuff
+apt -y install gnome-tweak-tool gnome-shell-extensions
+
+# Themes
+
+# Adapta
+apt -y install adapta-gtk-theme
+
+# Paper icons
+apt -y install paper-icon-theme
+
+# Touchpad
+apt -y install touchpad-indicator

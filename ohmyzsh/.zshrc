@@ -227,3 +227,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg-6'
 #    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #    npm "$@"
 #}
+
+if [[ $TERMINIX_ID  ]]; then
+    source /etc/profile.d/vte.sh
+fi
+

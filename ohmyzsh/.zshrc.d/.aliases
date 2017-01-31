@@ -16,13 +16,17 @@ alias	nod="killall node"
 alias   emperor="ssh root@emperor.razuna.com"
 
 # Server Helpmonks
-alias	monk1="ssh root@162.243.66.215"
+alias	monk1="ssh root@138.197.10.187"
 alias	monk2="ssh root@162.243.254.157"
 alias	monk3="ssh root@107.170.18.143"
 alias	monkweb="ssh root@helpmonks.com"
 alias	monkdb="ssh root@107.170.85.161"
 alias	monkdiscourse="ssh root@104.131.46.212"
 alias	monklb1="ssh root@162.243.48.170"
+alias	monkredis="ssh root@162.243.116.189"
+alias	haraka="ssh root@138.197.5.222"
+alias	haraka2="ssh root@162.243.76.241"
+alias	monkstorage="ssh root@138.197.26.177"
 
 # EPO
 alias	epo="ssh epo@185.49.16.67"
@@ -75,4 +79,11 @@ alias   agg="sudo apt upgrade"
 alias   agr="sudo apt autoremove"
 alias   agc="sudo apt autoclean"
 alias   agi="sudo apt install"
+alias   ap="sudo aptitude"
+
+# Robomongo
+alias   robo="~/Downloads/robomongo/bin/robomongo &"
+
+# MongoChef
+alias   mongochef="~/Downloads/mongochef/bin/mongochef.sh &"
 

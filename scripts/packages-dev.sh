@@ -75,3 +75,6 @@ update-rc.d mongodb disable
 service elasticsearch stop
 update-rc.d elasticsearch disable
 systemctl disable elasticsearch.service
+
+# cmake
+apt -y install cmake
